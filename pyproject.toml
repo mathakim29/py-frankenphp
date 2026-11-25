@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "frankenphp-cli"
+version = "0.1.0"
+description = "CLI wrapper that fetches and runs the latest FrankenPHP release from GitHub"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+frankenphp = "frankenphp:main"
+
+[tool.hatch.build.targets.wheel]
+modules = ["frankenphp"]
