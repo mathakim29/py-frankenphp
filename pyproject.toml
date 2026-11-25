@@ -13,4 +13,4 @@ dependencies = []
 frankenphp = "frankenphp:main"
 
 [tool.hatch.build.targets.wheel]
-modules = ["frankenphp"]
+packages = ["src/frankenphp"]
